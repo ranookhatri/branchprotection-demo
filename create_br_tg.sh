@@ -1,7 +1,9 @@
 #!/bin/bash
 # Define branch and tag names
-BRANCH_NAME="feature/version-1.0"
-TAG_NAME="v1.0"
+BRANCH_NAME=$1
+TAG_NAME=$2
+# BRANCH_NAME="feature/version-1.0"
+# TAG_NAME="v1.0"
 COMMIT_MESSAGE="$BRANCH_NAME created"
 
 # Create and switch to the release branch
