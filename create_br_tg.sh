@@ -22,4 +22,4 @@ git tag -a $TAG_NAME -m "$COMMIT_MESSAGE"
 # Push the tag to the remote repository
 git push origin $TAG_NAME
 
-echo "Branch $BRANCH_NAME and Tag $TAG_NAME created successfully."
+echo "Branch = $BRANCH_NAME and Tag = $TAG_NAME created successfully."
