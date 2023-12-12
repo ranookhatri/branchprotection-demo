@@ -2,8 +2,8 @@
 # Define branch and tag names
 # BRANCH_NAME=$1
 # TAG_NAME=$2
-BRANCH_NAME="feature/v1.0"
-TAG_NAME="v1.0"
+BRANCH_NAME="testfeature"
+TAG_NAME="v3.0"
 BRANCH_COMMIT_MESSAGE="Create Branch $BRANCH_NAME"
 TAG_COMMIT_MESSAGE="Create Tag $TAG_NAME"
 
