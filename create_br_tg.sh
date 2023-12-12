@@ -4,20 +4,20 @@
 # TAG_NAME=$2
 BRANCH_NAME="feature/v1.0"
 TAG_NAME="v1.0"
-COMMIT_MESSAGE="$BRANCH_NAME created"
+BRANCH_COMMIT_MESSAGE="Create Branch $BRANCH_NAME"
+TAG_COMMIT_MESSAGE="Create Tag $TAG_NAME"
 
-# Create and switch to the release branch
+# Create and Switch to the $BRANCH_NAME
 git checkout -b $BRANCH_NAME
 
-# Make changes, if needed
 # Commit the changes
-git commit -am "$COMMIT_MESSAGE"
+git commit -am "$BRANCH_COMMIT_MESSAGE"
 
 # Push the branch to the remote repository
 git push origin $BRANCH_NAME
 
 # Create a tag for the $BRANCH_NAME
-git tag -a $TAG_NAME -m "$COMMIT_MESSAGE"
+git tag -a $TAG_NAME -m "$TAG_COMMIT_MESSAGE"
 
 # Push the tag to the remote repository
 git push origin $TAG_NAME
